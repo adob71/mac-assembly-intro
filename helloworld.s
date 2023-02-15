@@ -1,9 +1,9 @@
 // assembler program to print helloworld to stdout
-// X0,X1,X2 - parameters to unix system calls
-// X16 - mach system call function number
+// X0,X1,X2 - parameter for unix system call
+// X16 - unix system call #
 
-.global _start  // provide program starting address to linker
-.align 2        // make sure everything is aligned properly
+.global _start  // start address for linker
+.align 2        // align
 
 _start: 
 
