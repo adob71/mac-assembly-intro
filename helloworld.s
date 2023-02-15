@@ -2,8 +2,8 @@
 // X0,X1,X2 - parameters to unix system calls
 // X16 - mach system call function number
 
-.global _start			// provide program starting address to linker
-.align 2		    	// make sure everything is aligned properly
+.global _start  // provide program starting address to linker
+.align 2        // make sure everything is aligned properly
 
 _start: 
 
