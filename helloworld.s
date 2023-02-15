@@ -9,10 +9,10 @@ _start:
 
 // Setup the parameters to print helloworld and then call the Kernel to do it
 mov X0, #1      // 1 = stdout
-adr	X1, string  // string to print
-mov	X2, #11     // length of the string
-mov	X16, #4     // unix system call #4 is to write the string
-svc	#0x80       // call kernel to write the string
+adr X1, string  // string to print
+mov X2, #11     // length of the string
+mov X16, #4     // unix system call #4 is to write the string
+svc #0x80       // call kernel to write the string
 
 // Setup the parameters to exit the program and then call the kernel to do it
 mov X0, #0      // return code = 0
